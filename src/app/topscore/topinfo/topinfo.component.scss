@@ -1,53 +1,51 @@
+// Main Container
 .topinfo-container {
   display: inline-flex;
   align-items: flex-start;
   position: absolute;
   top: 0;
   left: 4px;
-  border-radius: 0px 0px 8px 8px;
+  border-radius: 0 0 8px 8px;
   overflow: hidden;
+
   &-right {
     @extend .topinfo-container;
-    left: 1363px;
+    left: auto; // Align to the right side dynamically
+    right: 4px; // Fixed padding from the right
   }
 }
 
+// Pill Styling (Map Info)
 .topinfo-pill {
   display: flex;
   width: 180px;
   height: 24px;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 0px 10px 0px;
+  padding: 0 10px;
+  background: linear-gradient(90deg, rgba(20, 30, 40, 0.9) 0%, rgba(40, 50, 60, 0.9) 100%);
   position: relative;
   z-index: 2;
-  background: linear-gradient(
-    90deg,
-    rgba(15, 25, 35, 0.85) 0%,
-    rgba(31.14, 37.75, 40.58, 0.85) 100%
-  );
+  border-radius: 8px; // Slightly rounded for a modern look
+
   &-flex {
     @extend .topinfo-pill;
-    width: 240px;
+    width: 220px; // Adjusted width for the static discord link
   }
 }
 
+// Text Styling (Static)
 .topinfo-pill-text {
-  position: relative;
-  width: fit-content;
-  font-family: Montserrat, Helvetica;
+  font-family: Montserrat, Helvetica, sans-serif;
   font-weight: 800;
   color: #ffffff;
   font-size: 14px;
-  font-style: normal;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
+  white-space: nowrap; // Prevents line breaks
 }
 
+// Sponsor Section (Optional)
 .sponsor-container {
   position: absolute;
   width: 240px;
@@ -67,42 +65,7 @@
   transition: opacity 1s ease-in-out;
 }
 
-.spectra-logo {
-  max-width: 24px;
-  max-height: 100%;
-  position: absolute;
-  left: 5%;
-}
-
-@keyframes fadeLoop {
-  0% {
-    opacity: 1;
-  }
-  47% {
-    opacity: 1;
-  }
-  48% {
-    opacity: 0;
-  }
-  99% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.fadeLoopStart {
-  animation: fadeLoop 60s normal infinite;
-  animation-delay: 0s;
-  position: absolute;
-  left: 20%;
-}
-
-.fadeLoopDelay {
-  animation: fadeLoop 60s normal infinite;
-  animation-delay: -30s;
-  position: absolute;
-  left: 25%;
-  opacity: 0;
+// Hide SVG (if not needed in view)
+.d-none {
+  display: none;
 }

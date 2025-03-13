@@ -9,19 +9,20 @@
     <app-mapinfo [map]="match.map" [mapinfo]="match.tools.seriesInfo.mapInfo[2]"></app-mapinfo>
   </div>
 </div>
+
+<!-- Static AceArena Info (Cleaned Version) -->
 <div class="topinfo-container-right">
   <div class="topinfo-pill-flex">
-    <img src="assets/misc/icon.webp" alt="Underpeel Logo" class="spectra-logo" />
-    <div class="topinfo-pill-text fadeLoopStart">Overlay by Spectra</div>
-    <div class="topinfo-pill-text fadeLoopDelay">valospectra.com</div>
+    <div class="topinfo-pill-text">discord.gg/acearena</div>
   </div>
 </div>
+
+<!-- Sponsor Section (Optional) -->
 <!-- <div class="sponsor-container" *ngIf="sponsorsAvailable">
   <ng-container *ngFor="let sponsor of sponsorImages; let i = index">
     <img
       *ngIf="i === currentSponsorIndex"
       class="sponsor-logo"
-      [@fadeInOut]
       [src]="sponsor"
       alt="Sponsor Logo"
     />
