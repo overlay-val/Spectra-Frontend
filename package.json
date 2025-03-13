@@ -10,7 +10,8 @@
     "lint": "ng lint",
     "lint-fix": "ng lint --fix",
     "format": "prettier --write src",
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "pm2-start": "pm2 start 'serve -s dist/spectra-frontend/browser -l 4000' --name chat-client"
   },
   "private": true,
   "dependencies": {
