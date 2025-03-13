@@ -14,7 +14,7 @@ When the original repository gets updated, follow these steps to sync your fork:
 If you want to apply the upstream changes to your custom branch:
 
 1. Switch to your custom branch:
-```git checkout my-features```
+```git checkout my-Features```
 2. Merge updates from main:
 ```git merge main```
 3. If there are conflicts:
@@ -24,4 +24,4 @@ Resolve the conflicts manually in your code.
 5. Complete the merge:
 ```git merge --continue```
 6. Push the updated custom branch:
-```git push origin my-features```
+```git push origin my-Features```
