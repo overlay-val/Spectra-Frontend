@@ -42,8 +42,8 @@ Inside `config` folder, create a file named `config.json` with the following con
 
 ```
 {
-  "serverEndpoint": "http://localhost:5200",
-  "redirectUrl": "https://valospectra.com",
+  "serverEndpoint": "http://84.247.187.226:5200",
+  "redirectUrl": "http://localhost:4000/overlay?groupCode=test123",
   "sponsorImageUrls": ["/assets/misc/logo.webp"],
   "sponsorImageRotateSpeed": 5000,
   "attackerColorPrimary": "#b82e3c",

@@ -1,0 +1,12 @@
+{
+    "serverEndpoint": "http://84.247.187.226:5200",
+    "redirectUrl": "http://localhost:4000/overlay?groupCode=test123",
+    "sponsorImageUrls": ["/assets/misc/logo.webp"],
+    "sponsorImageRotateSpeed": 5000,
+    "attackerColorPrimary": "#b82e3c",
+    "attackerColorSecondary": "#ff4557",
+    "attackerColorShieldCurrency": "#ff838f",
+    "defenderColorPrimary": "#25ac79",
+    "defenderColorSecondary": "#61eab6",
+    "defenderColorShieldCurrency": "#61eab6"
+  }

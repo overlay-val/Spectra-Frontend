@@ -1,6 +1,6 @@
 export class Config {
-  serverEndpoint = "http://localhost:5200";
-  redirectUrl = "https://valospectra.com";
+  serverEndpoint = "http://84.247.187.226:5200";
+  redirectUrl = "http://localhost:4000/overlay?groupCode=test123";
   sponsorImageUrls: string[] = [];
   sponsorImageRotateSpeed = 5000; // in milliseconds
 
